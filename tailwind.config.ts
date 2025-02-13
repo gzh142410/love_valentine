@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -97,12 +96,23 @@ export default {
             transform: "scale(1)",
           },
         },
+        'falling-heart': {
+          '0%': {
+            transform: 'translateY(-10%) rotate(0deg)',
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'translateY(100vh) rotate(360deg)',
+            opacity: '0',
+          },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
         "fade-in": "fade-in 0.3s ease-out",
         float: "float 3s ease-in-out infinite",
         "scale-in": "scale-in 0.2s ease-out",
+        'falling-heart': 'falling-heart linear forwards',
       },
     },
   },
