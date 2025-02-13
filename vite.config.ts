@@ -4,18 +4,26 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/love-quest-joy/' : '/',
+  base: '/love-quest-joy/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
       output: {
-        manualChunks: undefined,
-        assetFileNames: 'assets/[name].[hash].[ext]',
-        chunkFileNames: 'assets/[name].[hash].js',
-        entryFileNames: 'assets/[name].[hash].js',
-      }
-    }
+        assetFileNames: (assetInfo) => {
+          const info = assetInfo.name.split('.');
+          let extType = info[info.length - 1];
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+            extType = 'img';
+          } else if (/mp3|wav|ogg/i.test(extType)) {
+            extType = 'audio';
+          }
+          return `assets/${extType}/[name]-[hash][extname]`;
+        },
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
+      },
+    },
   },
   server: {
     host: "::",
