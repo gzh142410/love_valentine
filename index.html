@@ -22,6 +22,17 @@
         }
       }(window.location))
     </script>
+    <script>
+      // Xử lý base URL cho GitHub Pages
+      (function() {
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        if (isGitHubPages) {
+          const baseElement = document.createElement('base');
+          baseElement.href = '/love-quest-joy/';
+          document.head.appendChild(baseElement);
+        }
+      })();
+    </script>
   </head>
 
   <body>
