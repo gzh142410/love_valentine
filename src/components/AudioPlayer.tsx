@@ -25,7 +25,7 @@ const AudioPlayer = () => {
 
     return (
         <div className='fixed bottom-4 right-4 z-50'>
-            <audio ref={audioRef} autoPlay loop src='/iu.mp3' />
+            <audio ref={audioRef} autoPlay loop src='./iu.mp3' />
             <button onClick={togglePlay} className='bg-valentine-pink/80 hover:bg-valentine-pink p-3 rounded-full shadow-lg transition-all'>
                 {isPlaying ? <Volume2 className='w-6 h-6 text-valentine-purple' /> : <VolumeX className='w-6 h-6 text-valentine-purple' />}
             </button>
