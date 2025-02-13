@@ -11,23 +11,66 @@ const Index = () => {
 
     const quizzes = [
         {
-            question: 'Điều gì khiến tình yêu trở nên đặc biệt?',
-            options: ['Vì nó là món quà vô giá', 'Vì nó làm cuộc sống có ý nghĩa hơn', 'Vì nó biến những điều bình thường thành phi thường', 'Tất cả các câu trên'],
-            correctAnswer: 'Tất cả các câu trên'
+            question: 'Điều gì làm nên một tình yêu đẹp?',
+            options: [
+                'Sự chân thành và tin tưởng',
+                'Sự thấu hiểu và chia sẻ',
+                'Cùng nhau vượt qua khó khăn',
+                'Tất cả các điều trên'
+            ],
+            correctAnswer: 'Tất cả các điều trên'
         },
         {
-            question: 'Yêu là gì?',
-            options: ['Là tha thứ mọi lỗi lầm', 'Là chấp nhận mọi khuyết điểm', 'Là cùng nhau trưởng thành', 'Tất cả các câu trên'],
-            correctAnswer: 'Tất cả các câu trên'
+            question: 'Tình yêu giống như điều gì nhất?',
+            options: [
+                'Như ánh nắng sưởi ấm tâm hồn',
+                'Như dòng suối mát lành',
+                'Như bài hát ngọt ngào',
+                'Như cánh hoa tươi thắm'
+            ],
+            correctAnswer: 'Như ánh nắng sưởi ấm tâm hồn'
+        },
+        {
+            question: 'Điều gì là quan trọng nhất trong tình yêu?',
+            options: [
+                'Sự chân thành',
+                'Lòng thủy chung',
+                'Sự quan tâm',
+                'Tất cả đều quan trọng như nhau'
+            ],
+            correctAnswer: 'Tất cả đều quan trọng như nhau'
+        },
+        {
+            question: 'Tình yêu đẹp nhất khi nào?',
+            options: [
+                'Khi ta biết hy sinh vì nhau',
+                'Khi ta luôn bên nhau mọi lúc',
+                'Khi ta cùng nhau trưởng thành',
+                'Tất cả các thời điểm trên'
+            ],
+            correctAnswer: 'Tất cả các thời điểm trên'
         }
     ];
 
     const wishes = [
         {
-            wish: 'Mỗi khoảnh khắc bên chị đều là những kỷ niệm đẹp mà em sẽ trân trọng mãi mãi. ',
-            from: 'Chị Loan cute hehe '
+            wish: 'Chúc chị luôn xinh đẹp, hạnh phúc và tràn đầy năng lượng. Mong rằng sau này chị và em có thể là một điều gì đó tuyệt vời hơn nữa ',
+            from: 'Chị iu '
+        },
+        {
+            wish: 'Cảm ơn chị đã luôn , chia sẻ những niềm vui nỗi buồn  cùng em ',
+            from: 'Chị siu cute'
+        },
+        {
+            wish: 'Mỗi ngày bên chị là một ngày tràn ngập hạnh phúc. ',
+            from: 'Người thương của chị'
+        },
+        {
+            wish: 'Chị là điều tuyệt vời nhất mà cuộc đời đã mang đến cho cho. Cảm ơn chị vì tất cả!',
+            from: 'Người luôn thương chị'
         }
     ];
+
 
     const handleCorrectAnswer = () => {
         if (currentQuizIndex < quizzes.length - 1) {
@@ -51,11 +94,15 @@ const Index = () => {
                         <Gift className='w-8 h-8 text-valentine-purple animate-float delay-200' />
                     </div>
                     <div className='relative inline-block'>
-                        <h1 className='text-5xl font-bold text-valentine-dark mb-2 bg-clip-text text-transparent bg-gradient-to-r from-valentine-purple to-pink-400'>Valentine's Day</h1>
+                        <h1 className='text-5xl font-bold text-valentine-dark mb-2 bg-clip-text text-transparent bg-gradient-to-r from-valentine-purple to-pink-400'>
+                            Chuyện Tình Yêu Của Chúng Ta
+                        </h1>
                         <Sparkles className='absolute -top-4 -right-8 w-6 h-6 text-yellow-400 animate-pulse' />
                         <Sparkles className='absolute -bottom-2 -left-8 w-6 h-6 text-yellow-400 animate-pulse delay-300' />
                     </div>
-                    <p className='text-valentine-purple text-lg mt-4 font-medium'>Hãy cùng nhau khám phá những câu đố về tình yêu nhé! 💝</p>
+                    <p className='text-valentine-purple text-lg mt-4 font-medium'>
+                        Hãy cùng nhau khám phá những điều thú vị về tình yêu của chúng ta nhé! 💝
+                    </p>
                 </div>
 
                 <div className='relative'>
