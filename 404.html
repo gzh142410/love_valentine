@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      var redirectUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        '/love_valentine/' +
+        l.pathname.split('/').slice(pathSegmentsToKeep + 1).join('/') +
+        (l.search ? l.search : '') +
+        (l.hash ? l.hash : '');
+      window.location.replace(redirectUrl);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
