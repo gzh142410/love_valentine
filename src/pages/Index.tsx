@@ -35,19 +35,19 @@ const Index = () => {
     const wishes = [
         {
             wish: 'Anh thật may mắn khi có em trong cuộc đời này. Em là điều tuyệt vời nhất mà định mệnh đã mang đến cho anh. Yêu em thật nhiều!',
-            from: 'Người yêu của em'
+            from: 'Nguyễn Nguyên Giáp with love from Nguyễn Thị Huệ'
         },
         {
             wish: 'Mỗi ngày được thức dậy và biết rằng có em tồn tại trên đời này là động lực để anh cố gắng trở thành phiên bản tốt hơn của chính mình.',
-            from: 'Người luôn nhớ về em'
+            from: 'Bé MOn'
         },
         {
             wish: 'Cảm ơn em đã đến và làm cho cuộc sống của anh trở nên tươi đẹp hơn. Anh hứa sẽ luôn ở bên, yêu thương và che chở cho em.',
-            from: 'Người yêu em vô điều kiện'
+            from: 'Giáp Zech'
         },
         {
             wish: 'Em biết không, mỗi nụ cười của em là một món quà quý giá với anh. Anh mong được thấy em cười mỗi ngày và làm em hạnh phúc mãi mãi.',
-            from: 'Người mang nụ cười đến cho em'
+            from: 'Love Huệ Nguyễn From Giáp Zech'
         }
     ];
 
