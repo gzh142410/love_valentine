@@ -30,7 +30,7 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
-          VITE_BASE_URL: /love-quest-joy/
+          VITE_BASE_URL: /love_valentine/
 
       - name: Check build output
         run: |
