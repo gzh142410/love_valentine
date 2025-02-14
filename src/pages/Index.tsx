@@ -12,65 +12,44 @@ const Index = () => {
     const quizzes = [
         {
             question: 'Điều gì làm nên một tình yêu đẹp?',
-            options: [
-                'Sự chân thành và tin tưởng',
-                'Sự thấu hiểu và chia sẻ',
-                'Cùng nhau vượt qua khó khăn',
-                'Tất cả các điều trên'
-            ],
+            options: ['Sự chân thành và tin tưởng', 'Sự thấu hiểu và chia sẻ', 'Cùng nhau vượt qua khó khăn', 'Tất cả các điều trên'],
             correctAnswer: 'Tất cả các điều trên'
         },
         {
             question: 'Tình yêu giống như điều gì nhất?',
-            options: [
-                'Như ánh nắng sưởi ấm tâm hồn',
-                'Như dòng suối mát lành',
-                'Như bài hát ngọt ngào',
-                'Như cánh hoa tươi thắm'
-            ],
+            options: ['Như ánh nắng sưởi ấm tâm hồn', 'Như dòng suối mát lành', 'Như bài hát ngọt ngào', 'Như cánh hoa tươi thắm'],
             correctAnswer: 'Như ánh nắng sưởi ấm tâm hồn'
         },
         {
             question: 'Điều gì là quan trọng nhất trong tình yêu?',
-            options: [
-                'Sự chân thành',
-                'Lòng thủy chung',
-                'Sự quan tâm',
-                'Tất cả đều quan trọng như nhau'
-            ],
+            options: ['Sự chân thành', 'Lòng thủy chung', 'Sự quan tâm', 'Tất cả đều quan trọng như nhau'],
             correctAnswer: 'Tất cả đều quan trọng như nhau'
         },
         {
             question: 'Tình yêu đẹp nhất khi nào?',
-            options: [
-                'Khi ta biết hy sinh vì nhau',
-                'Khi ta luôn bên nhau mọi lúc',
-                'Khi ta cùng nhau trưởng thành',
-                'Tất cả các thời điểm trên'
-            ],
+            options: ['Khi ta biết hy sinh vì nhau', 'Khi ta luôn bên nhau mọi lúc', 'Khi ta cùng nhau trưởng thành', 'Tất cả các thời điểm trên'],
             correctAnswer: 'Tất cả các thời điểm trên'
         }
     ];
 
     const wishes = [
         {
-            wish: 'Chúc chị luôn xinh đẹp, hạnh phúc và tràn đầy năng lượng. Mong rằng sau này chị và em có thể là một điều gì đó tuyệt vời hơn nữa ',
-            from: 'Chị iu '
+            wish: 'Anh thật may mắn khi có em trong cuộc đời này. Em là điều tuyệt vời nhất mà định mệnh đã mang đến cho anh. Yêu em thật nhiều!',
+            from: 'Người yêu của em'
         },
         {
-            wish: 'Cảm ơn chị đã luôn , chia sẻ những niềm vui nỗi buồn  cùng em ',
-            from: 'Chị siu cute'
+            wish: 'Mỗi ngày được thức dậy và biết rằng có em tồn tại trên đời này là động lực để anh cố gắng trở thành phiên bản tốt hơn của chính mình.',
+            from: 'Người luôn nhớ về em'
         },
         {
-            wish: 'Mỗi ngày bên chị là một ngày tràn ngập hạnh phúc. ',
-            from: 'Người thương của chị'
+            wish: 'Cảm ơn em đã đến và làm cho cuộc sống của anh trở nên tươi đẹp hơn. Anh hứa sẽ luôn ở bên, yêu thương và che chở cho em.',
+            from: 'Người yêu em vô điều kiện'
         },
         {
-            wish: 'Chị là điều tuyệt vời nhất mà cuộc đời đã mang đến cho cho. Cảm ơn chị vì tất cả!',
-            from: 'Người luôn thương chị'
+            wish: 'Em biết không, mỗi nụ cười của em là một món quà quý giá với anh. Anh mong được thấy em cười mỗi ngày và làm em hạnh phúc mãi mãi.',
+            from: 'Người mang nụ cười đến cho em'
         }
     ];
-
 
     const handleCorrectAnswer = () => {
         if (currentQuizIndex < quizzes.length - 1) {
@@ -94,15 +73,11 @@ const Index = () => {
                         <Gift className='w-8 h-8 text-valentine-purple animate-float delay-200' />
                     </div>
                     <div className='relative inline-block'>
-                        <h1 className='text-5xl font-bold text-valentine-dark mb-2 bg-clip-text text-transparent bg-gradient-to-r from-valentine-purple to-pink-400'>
-                            Chuyện Tình Yêu Của Chúng Ta
-                        </h1>
+                        <h1 className='text-5xl font-bold text-valentine-dark mb-2 bg-clip-text text-transparent bg-gradient-to-r from-valentine-purple to-pink-400'>Chuyện Tình Yêu Của Chúng Ta</h1>
                         <Sparkles className='absolute -top-4 -right-8 w-6 h-6 text-yellow-400 animate-pulse' />
                         <Sparkles className='absolute -bottom-2 -left-8 w-6 h-6 text-yellow-400 animate-pulse delay-300' />
                     </div>
-                    <p className='text-valentine-purple text-lg mt-4 font-medium'>
-                        Hãy cùng nhau khám phá những điều thú vị về tình yêu của chúng ta nhé! 💝
-                    </p>
+                    <p className='text-valentine-purple text-lg mt-4 font-medium'>Hãy cùng nhau khám phá những điều thú vị về tình yêu của chúng ta nhé! 💝</p>
                 </div>
 
                 <div className='relative'>
